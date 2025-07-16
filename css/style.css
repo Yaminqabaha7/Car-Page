@@ -1,0 +1,957 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  height: 1000px;
+}
+.home-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/11111111.jpg);
+  position: relative;
+  background-size: cover;
+}
+.home-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  padding-right: 60px;
+}
+.headerinput {
+  width: 240px;
+  height: 30px;
+  background-color: rgb(250, 250, 252);
+  border-radius: 20px;
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 75px;
+  border: 0;
+}
+.search-icon {
+  position: absolute;
+  margin-left: 90px;
+  margin-top: 17px;
+  font-size: 15px;
+}
+.home-icon {
+  margin: 10px 20px;
+  position: absolute;
+  font-size: 29px;
+  color: aliceblue;
+}
+
+.header-list {
+  list-style: none;
+  margin-top: 15px;
+}
+.header-list li {
+  float: right;
+  margin-left: 25px;
+  position: relative;
+  padding-bottom: 5px;
+}
+.main-li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(255, 0, 0);
+  opacity: 0;
+}
+.main-li a:hover::after {
+  width: 100%;
+  opacity: 0.8;
+  transition: 0.4s;
+}
+.header-list a {
+  text-decoration: none;
+  font-size: 17px;
+  color: rgb(255, 255, 255);
+}
+.blog-li {
+  position: relative;
+}
+.blog-div {
+  background-color: rgb(238, 232, 232);
+  width: 150px;
+  height: 170px;
+  margin-top: 10px;
+  position: absolute;
+  border-radius: 15px;
+  visibility: hidden;
+  border: 1px solid rgb(95, 95, 192);
+  padding: 20px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.blog-li:hover .blog-div {
+  visibility: visible;
+  opacity: 1;
+}
+.blog-div ul {
+  list-style: none;
+}
+.blog-div li {
+  float: none;
+  margin: 15px 0;
+  margin-bottom: 20px;
+}
+.blog-div a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+}
+.home-text {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.home-text h2 {
+  font-size: 65px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+.home-p {
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #b3b1b1;
+}
+.home-but {
+  font-size: 20px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 15px;
+  text-transform: capitalize;
+  padding: 16px 14px;
+}
+.but2 {
+  background-color: rgb(68, 38, 38);
+  color: #fefefe;
+}
+.home-but:hover {
+  opacity: 0.4;
+}
+/*-----------------------------------end of home-section(first section)---------------------------------------------------------*/
+.welcome-page {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+.welcome-title {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.welcome-p {
+  width: 100px;
+  background-color: rgb(124, 13, 13);
+  height: 3px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.welcome-contener {
+  width: 80%;
+  margin: auto;
+}
+.welcome-parent {
+  overflow: auto;
+  padding-top: 80px;
+}
+.welcome-div {
+  text-align: center;
+  padding: 15px 2px;
+  width: 30%;
+  height: 220px;
+  position: relative;
+  float: left;
+  border: 1px solid rgb(124, 13, 13);
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.welcome-div::after {
+  position: absolute;
+  content: "";
+  background-color: #a09b9b;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  border-radius: 10px;
+}
+.welcome-div:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  transition: 0.5s;
+  position: absolute;
+  border-radius: 10px;
+}
+.wdiv {
+  margin: 0px 5%;
+}
+.welcome-icon {
+  color: rgb(124, 13, 13);
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.welcome-div h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.welcome-div:hover h3 {
+  color: #ffffff;
+}
+.welcome-div p {
+  margin-bottom: 20px;
+  color: rgb(170, 165, 165);
+}
+.welcome-div:hover p {
+  color: black;
+}
+.welcome-div a {
+  text-decoration: none;
+  color: blue;
+  opacity: 0.75;
+}
+.welcome-div:hover a {
+  opacity: 1;
+}
+/*-----------------------------------end of welcome-section(section2)---------------------------------------------------------*/
+.work-page {
+  background-color: rgba(200, 190, 190, 0.3);
+  height: 100vh;
+  width: 100%;
+}
+.work-title {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.work-p {
+  width: 100px;
+  background-color: rgb(124, 13, 13);
+  height: 3px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.work-contener {
+  width: 65%;
+  margin: auto;
+}
+.work-parent {
+  overflow: auto;
+  padding-top: 20px;
+}
+.work-div {
+  text-align: center;
+  padding: 15px 2px;
+  margin: 20px 0;
+  width: 30%;
+  height: 180px;
+  float: left;
+  text-transform: capitalize;
+  position: relative;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.work-div:hover .image-overlay {
+  visibility: visible;
+  transition: 0.5s;
+}
+.w1 {
+  background-image: url(../image/2.jpg);
+  position: relative;
+  background-size: cover;
+}
+.w2 {
+  margin: 20px 5%;
+  background-image: url(../image/1.jpg);
+  position: relative;
+  background-size: cover;
+}
+.w3 {
+  background-image: url(../image/3.jpg);
+  position: relative;
+  background-size: cover;
+}
+.w4 {
+  background-image: url(../image/4.jpg);
+  position: relative;
+  background-size: cover;
+}
+.w5 {
+  margin: 20px 5%;
+  background-image: url(../image/5.jpg);
+  position: relative;
+  background-size: cover;
+}
+.w6 {
+  background-image: url(../image/6.jpg);
+  position: relative;
+  background-size: cover;
+}
+.work-heroimage {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.work-div h3 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: #b3b1b1;
+}
+.work-div p {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+.work-div a {
+  background-color: rgb(255, 255, 255);
+  color: #b3b1b1;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 3px;
+}
+/*----------------------------------------------end of section3---------------------------*/
+.section4-page {
+  background-color: rgba(200, 190, 190, 0.3);
+  height: 100vh;
+  width: 100%;
+}
+.section4-title {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.section4-p {
+  width: 100px;
+  background-color: rgb(124, 13, 13);
+  height: 3px;
+  margin: auto;
+}
+.section4-contener {
+  width: 70%;
+  margin: auto;
+}
+.section4-parent {
+  overflow: auto;
+  padding-top: 20px;
+}
+.s4pa2 {
+  margin-top: 10px;
+}
+.section4-div {
+  text-align: left;
+  padding: 25px 10px;
+  margin: 20px 0;
+  width: 27%;
+  height: 200px;
+  float: left;
+  position: relative;
+  border: 1px solid rgb(124, 13, 13);
+  border-radius: 13px;
+}
+.s4div {
+  margin: 20px 9.5%;
+}
+.section4-div::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(130, 57, 57);
+  opacity: 0;
+  border-radius: 13px;
+  z-index: -1;
+}
+.section4-div:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  transition: 0.5s;
+}
+.section4-div h3 {
+  margin-bottom: 20px;
+  font-size: 23px;
+  color: #000000;
+  margin-left: 50px;
+  text-transform: capitalize;
+}
+.section4-div:hover h3 {
+  color: #5a2a2a;
+}
+.section4-div p {
+  color: #b3b1b1;
+  margin-left: 50px;
+}
+.section4-div:hover p {
+  color: rgb(0, 0, 0);
+}
+.section4-div i {
+  color: rgb(124, 13, 13);
+  font-size: 40px;
+  margin-left: 3px;
+  position: absolute;
+}
+/*...................................end of section4-------------------------------------------------*/
+.section5 {
+  height: 100vh;
+  width: 100%;
+}
+.section5-contener {
+  width: 80%;
+  margin: 90px auto;
+}
+.sec5-text {
+  text-align: left;
+  width: 50%;
+  padding-top: 20px;
+  float: left;
+}
+.sec5-text h3 {
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.sec5-ph {
+  width: 80px;
+  background-color: rgb(124, 13, 13);
+  height: 3px;
+}
+.sec5-pm {
+  color: #b3b1b1;
+  margin: 40px 0px;
+}
+.sec5-text ul {
+  list-style: none;
+}
+.sec5-text li {
+  margin-bottom: 30px;
+  color: rgb(145, 142, 142);
+  font-size: 16px;
+}
+.sec5-text i {
+  color: rgb(124, 13, 13);
+}
+.sec5-img {
+  float: right;
+  width: 30%;
+  height: 100%;
+  margin-top: 30px;
+}
+.sec5-img ul {
+  display: block;
+  margin-left: 40%;
+}
+.sec5-img li {
+  margin: 10px 5px;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(174, 174, 175);
+}
+.sec5-img li:hover {
+  background-color: rgb(124, 13, 13);
+}
+/*...................................end of section5-------------------------------------------------*/
+.section6 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/campbell-3ZUsNJhi_Ik-unsplash.jpg);
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.sec6-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sec6-contaner {
+  margin: auto;
+  width: 80%;
+}
+.sec6-parent {
+  padding-top: 150px;
+  overflow: auto;
+}
+.sec6-icon {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+.sec6-icon i {
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+}
+.sec6-icon h5 {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  margin-top: 15px;
+}
+.sec6-icon p {
+  color: rgb(255, 255, 255);
+}
+/*...................................end of section6-------------------------------------------------*/
+.section7 {
+  height: 100vh;
+  width: 100%;
+}
+.sec7-contaner {
+  width: 75%;
+  margin: auto;
+  padding-top: 50px;
+}
+.sec7-title {
+  margin-bottom: 60px;
+}
+.sec7-title h2 {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+.sec7-title p {
+  width: 90px;
+  background-color: rgb(124, 13, 13);
+  height: 3.3px;
+  margin: auto;
+}
+.sec7-parent {
+  overflow: auto;
+}
+.sec7div {
+  text-align: center;
+  padding: 15px 2px;
+  width: 30%;
+  position: relative;
+  float: left;
+  border: 1px solid rgb(124, 13, 13);
+  border-radius: 10px;
+}
+.div72 {
+  margin: 0 5%;
+}
+.sec7div h2 {
+  font-size: 18px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.sec7div:hover h2 {
+  color: #7b1818;
+}
+.sec7div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #c05353;
+  opacity: 0.4;
+  border-radius: 10px;
+  z-index: -1;
+  transition: 0.5s;
+}
+.sec7div:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: 0.5s;
+}
+
+.sec7div p {
+  font-size: 15px;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.sec7div button {
+  width: 170px;
+  height: 30px;
+  border: 2px solid rgb(124, 13, 13);
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.sec7price {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(124, 13, 13, 0.5);
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 0;
+}
+.sec7div:hover .sec7price {
+  border: 2px solid rgba(124, 13, 13, 1);
+}
+.sec7price h3 {
+  font-size: 30px;
+}
+/*...................................end of section7-------------------------------------------------*/
+
+.section8 {
+  width: 100%;
+  height: 400px;
+  background-image: url(../image/austin-hervias-WYfUOcGLuHM-unsplash.jpg);
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 50px;
+}
+.sec8-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sec8-contaner {
+  margin: auto;
+  width: 70%;
+}
+.sec8-parent {
+  margin: auto;
+  width: 90%;
+  height: 100%;
+  overflow: auto;
+}
+.sec8-div {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+.sec8item {
+  text-transform: capitalize;
+  padding: 130px 40px 10px 150px;
+  position: relative;
+  line-height: 1.4;
+}
+.sec8item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50px;
+  top: 120px;
+}
+.sec8item h2 {
+  color: white;
+  font-size: 30px;
+}
+.sec8item h5 {
+  color: rgb(129, 23, 23);
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.sec8-div p {
+  margin: 10px 30px 0px 50px;
+  line-height: 1.4;
+  text-transform: capitalize;
+  color: rgb(211, 201, 201);
+}
+/*...................................end of section8-------------------------------------------------*/
+.section9 {
+  height: 100vh;
+  width: 100%;
+}
+.sec9-title {
+  margin-bottom: 10px;
+  padding: 40px;
+}
+.sec9-title h2 {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 40px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.sec9-title p {
+  width: 90px;
+  background-color: rgb(124, 13, 13);
+  height: 3.3px;
+  margin: auto;
+}
+.sec9-contaner {
+  margin: auto;
+  width: 80%;
+}
+.sec9-parent {
+  overflow: auto;
+  position: relative;
+}
+.sec9-item {
+  width: 30%;
+  float: left;
+  background-color: rgb(174, 174, 175);
+  padding: 20px 40px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+}
+.sec9item2 {
+  margin: 0 5%;
+}
+.teamimg {
+  position: relative;
+}
+.teamimg img {
+  width: 100%;
+  height: 220px;
+}
+.teamicon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+.sec9-item:hover .teamicon {
+  visibility: visible;
+}
+.teamicon a {
+  color: rgb(124, 13, 13);
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  margin-left: auto;
+}
+.teamicon a i {
+  line-height: 40px;
+}
+.teamtext h2 {
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+.teamtext p {
+  text-transform: uppercase;
+  margin-top: 15px;
+  color: rgb(255, 255, 255);
+}
+.sec9-item:hover p {
+  color: #000;
+}
+.sec9-item:hover h2 {
+  color: #ffffff;
+}
+.sec9-item::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgb(130, 57, 57);
+  border-radius: 10px;
+  transition: 0.5s;
+  opacity: 0.5;
+}
+
+.sec9-item:hover:after {
+  width: 100%;
+  height: 100%;
+}
+/*...................................end of section9------------------------------------------------*/
+
+.section10 {
+  height: 100vh;
+  width: 100%;
+}
+.sec10-title {
+  margin-bottom: 50px;
+}
+.sec10-title h2 {
+  text-align: center;
+  padding-top: 70px;
+  font-size: 45px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.sec10-title p {
+  width: 90px;
+  background-color: rgb(124, 13, 13);
+  height: 3.3px;
+  margin: auto;
+}
+.sec10-contaner {
+  margin: auto;
+  width: 80%;
+}
+.sec10-parent {
+  overflow: auto;
+}
+.sec10-item {
+  width: 30%;
+  float: left;
+  padding: 20px 5px;
+  text-align: center;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgb(124, 13, 13);
+  border-radius: 10px;
+}
+.sec10-item2 {
+  margin: 0 5%;
+}
+.sec10-item::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgb(130, 57, 57);
+  border-radius: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+  z-index: -1;
+}
+.sec10-item:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.sec10-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+.sec10-icon {
+  width: 75%;
+  margin: auto;
+}
+.sec10-icon ul {
+  list-style: none;
+  margin-top: 20px;
+  text-transform: capitalize;
+}
+.sec10-icon li {
+  margin-left: 15px;
+  float: left;
+}
+.sec10-item:hover li {
+  color: rgb(83, 27, 27);
+}
+.sec10-icon a {
+  color: rgb(124, 13, 13);
+  margin: 5px;
+}
+.sec10-text {
+  margin-top: 50px;
+}
+.sec10-text h4 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.sec10-item:hover h4 {
+  color: #ffffff;
+}
+.sec10-text p {
+  margin-top: 20px;
+  color: rgb(101, 92, 92);
+}
+.sec10-item:hover p {
+  color: rgb(0, 0, 0);
+}
+.sec10-text a {
+  margin-top: 20px;
+  text-decoration: none;
+  display: block;
+}
+/*...................................end of last section------------------------------------------------*/
+.lastsection {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(200, 190, 190, 0.3);
+}
+.lastcontener {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.lastcontener p {
+  font-size: 12px;
+  color: rgb(113, 102, 102);
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+.lastimg img {
+  width: 260px;
+  height: 200px;
+  border-radius: 10px;
+}
+.lasticons {
+  margin-top: 20px;
+}
+.lasticons i {
+  background-color: rgba(129, 31, 31, 0.3);
+  display: inline-block;
+  font-size: 30px;
+  padding-top: 12px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+.lasticons i:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(129, 31, 31, 0.3);
+  transition: 0.5s;
+  opacity: 0.5;
+  border-radius: 10px;
+}
+.lasticons i:hover {
+  background-color: rgba(255, 0, 0);
+  transition: 0.5s;
+}
