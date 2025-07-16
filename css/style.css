@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgba(255, 255, 255, 0.9);
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -874,6 +875,9 @@ body {
   margin-left: 15px;
   float: left;
 }
+html {
+  scroll-behavior: smooth;
+}
 .sec10-item:hover li {
   color: rgb(83, 27, 27);
 }
@@ -951,6 +955,7 @@ body {
   opacity: 0.5;
   border-radius: 10px;
 }
+
 .lasticons i:hover {
   background-color: rgba(255, 0, 0);
   transition: 0.5s;
