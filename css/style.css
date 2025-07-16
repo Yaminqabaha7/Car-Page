@@ -898,14 +898,15 @@ html {
 .sec10-text p {
   margin-top: 20px;
   color: rgb(101, 92, 92);
+    margin-bottom: 20px;
 }
 .sec10-item:hover p {
   color: rgb(0, 0, 0);
 }
 .sec10-text a {
-  margin-top: 20px;
+
   text-decoration: none;
-  display: block;
+
 }
 /*...................................end of last section------------------------------------------------*/
 .lastsection {
