@@ -59,7 +59,7 @@ Car-Page/
 
 ## 📸 Preview
 
-> _Include screenshots or a live demo link here if available._
+> https://yaminqabaha7.github.io/Car-Zoom/
 
 ---
 
